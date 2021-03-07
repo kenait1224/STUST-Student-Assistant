@@ -13,22 +13,22 @@
 <br>![CurriculumDemo1](https://user-images.githubusercontent.com/62971778/110233610-01e05880-7f60-11eb-8207-6bdd70b6b40f.gif)
 
 * **完整課表內容**<br>
-<br>您可以透過點擊或滑動來變更焦點項目，並且如果點擊項目與焦點項目相同則會開啟完整內容。
+<br>您可以透過`點擊`或`滑動`來變更焦點項目，並且如果`點擊`項目與焦點項目相同則會開啟完整內容。
 <br>如下圖所示：<br>
 <br>![CurriculumDemo2](https://user-images.githubusercontent.com/62971778/110234350-f9d6e780-7f64-11eb-857d-0490a8e1db36.gif)
 
 * ~**_顯示上課位置_**~**_( 尚未推出 )_**<br>
-<br>~_您可以透過再次點擊完整內容中的目標項目來顯示課程所在位置_~。
+<br>~_您可以透過再次`點擊`完整內容中的目標項目來顯示課程所在位置_~。
 
 ### 課程瀏覽
 * **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程內容瀏覽**<br>
-<br>透過左右滑動能夠切換 [Flip](https://flip.stust.edu.tw/) 與 [Flip Class](https://flipclass.stust.edu.tw/)，點擊後能夠顯示該課程詳細內容。
+<br>能夠透過`左右滑動`切換 [Flip](https://flip.stust.edu.tw/) 與 [Flip Class](https://flipclass.stust.edu.tw/)，`點擊`後能夠顯示該課程詳細內容。
 <br>如下圖所示：<br>
 <br>![CourseDemo1](https://user-images.githubusercontent.com/62971778/110236448-e0d43380-7f70-11eb-9820-c50b90a177be.gif)
 
-* **支援部分內容預覽**<br> 
-<br>在「課程公告」、「課程教材」、「課程作業」中目前支援預覽的項目如下：<br>
-**_注意：目前並沒有支援「上傳」等相關功能_**
+* **支援部分內容預覽與附件下載**<br> 
+<br>在「課程活動」、「課程教材」、「課程作業」中目前支援預覽的項目如下：<br>
+**_注意：目前並沒有支援「上傳/編輯」等相關功能_**
   * ![ppt](https://user-images.githubusercontent.com/62971778/110240037-ecc9f080-7f84-11eb-94d7-8d671bf9b5bc.png) **[ Flip ]** 簡報教材 ( ppt ) 
   * ![hyperlink](https://user-images.githubusercontent.com/62971778/110240041-f2273b00-7f84-11eb-8655-b1f11caaad30.png) **[ Flip ]** 外部連結 ( hyperlink )
   * ![homework(successful)](https://user-images.githubusercontent.com/62971778/110240044-f5bac200-7f84-11eb-97a6-a81950c1de4d.png) **[ Flip ]** 已繳交課程作業 ( exercise successful )
@@ -39,6 +39,8 @@
   * ![ifram](https://user-images.githubusercontent.com/62971778/110240080-269af700-7f85-11eb-9d50-b58a4653ee0b.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
   * ![Media 1](https://user-images.githubusercontent.com/62971778/110240087-2c90d800-7f85-11eb-9e8a-36121e375030.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
   * ![default](https://user-images.githubusercontent.com/62971778/110240117-5518d200-7f85-11eb-8bbe-d79f1e3e86b1.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )
+<br> 上述支援的內容中，能夠通過`長按`
+
 ### 公告瀏覽
 ### 通知瀏覽
 ### 個人設定
