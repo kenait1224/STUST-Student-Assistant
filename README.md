@@ -17,11 +17,23 @@
 <br>如下圖所示：<br>
 <br>![CurriculumDemo2](https://user-images.githubusercontent.com/62971778/110234350-f9d6e780-7f64-11eb-857d-0490a8e1db36.gif)
 
-* **_顯示上課位置(預期推出)_**
-<br>_您可以透過點擊或滑動來變更焦點項目，並且如果點擊項目與焦點項目相同則會開啟完整內容_。
-
+* **_顯示上課位置(預期推出)_**<br>
+<br>_您可以透過再次點擊完整內容中的目標項目來顯示課程所在位置_。
 
 ### 課程瀏覽
+* **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程內容瀏覽**<br>
+<br>透過左右滑動能夠切換 [Flip](https://flip.stust.edu.tw/) 與 [Flip Class](https://flipclass.stust.edu.tw/)，點擊後能夠顯示該課程詳細內容。
+<br>如下圖所示：<br>
+<br>![CourseDemo1](https://user-images.githubusercontent.com/62971778/110236448-e0d43380-7f70-11eb-9820-c50b90a177be.gif)
+
+* **支援部分內容預覽**<br> 
+<br>在「課程公告」、「課程教材」、「課程作業」中目前支援的瀏覽項目如下：
+  * 一般文件教材 ( Doc )
+  * 可攜式文件教材 ( PDF )
+  * 嵌入式網頁教材 ( Iframe )
+  * 外部影片連結教材 ( Embed )
+  * ~EverCam~ ( 尚未支援 )
+
 ### 公告瀏覽
 ### 通知瀏覽
 ### 個人設定
