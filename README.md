@@ -38,8 +38,8 @@
   * ![pdf](https://user-images.githubusercontent.com/62971778/110238436-95278700-7f7c-11eb-888e-c0e9ecbcb1d6.png) **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
   * ![ifram](https://user-images.githubusercontent.com/62971778/110240080-269af700-7f85-11eb-9d50-b58a4653ee0b.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
   * ![Media 1](https://user-images.githubusercontent.com/62971778/110240087-2c90d800-7f85-11eb-9e8a-36121e375030.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
-  * ![default](https://user-images.githubusercontent.com/62971778/110240117-5518d200-7f85-11eb-8bbe-d79f1e3e86b1.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )<br>
-* **課程內容預覽與下載**<br>
+  * ![default](https://user-images.githubusercontent.com/62971778/110240117-5518d200-7f85-11eb-8bbe-d79f1e3e86b1.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )<br><br>
+* **課程內容預覽與附件下載**<br>
 <br>在目前支援的項目內容中，能夠使用`長按`來顯示目標的完整名稱，並且可以透過`點擊`來預覽目標詳細內容。
 <br>如下圖所示：<br>
 <br>
