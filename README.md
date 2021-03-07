@@ -17,7 +17,7 @@
 <br>如下圖所示：<br>
 <br>![CurriculumDemo2](https://user-images.githubusercontent.com/62971778/110234350-f9d6e780-7f64-11eb-857d-0490a8e1db36.gif)
 
-
+* __顯示上課位置(預期推出)__
 
 ### 課程瀏覽
 ### 公告瀏覽
