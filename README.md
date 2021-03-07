@@ -26,8 +26,13 @@
 <br>如下圖所示：<br>
 <br>![CourseDemo1](https://user-images.githubusercontent.com/62971778/110236448-e0d43380-7f70-11eb-9820-c50b90a177be.gif)
 
-* **支援部分內容預覽與附件下載**<br> 
-<br>在「課程活動」、「課程教材」、「課程作業」中目前支援預覽的項目如下：<br>
+* **課程內容瀏覽與附件下載**<br>
+<br>在目前支援的項目內容中，能夠使用`長按`來顯示目標的完整名稱，並且可以透過`點擊`來瀏覽目標詳細內容。
+<br>如下圖所示：<br>
+<br>![CourseDemo2](https://user-images.githubusercontent.com/62971778/110241632-c0b26d80-7f8c-11eb-975c-9a6c09bbc5e2.gif)
+
+* **支援部分內容瀏覽與附件下載**<br> 
+<br>在「課程活動」、「課程教材」、「課程作業」中目前支援瀏覽的項目如下：<br>
 **_注意：目前並沒有支援「上傳/編輯」等相關功能_**
   * ![ppt](https://user-images.githubusercontent.com/62971778/110240037-ecc9f080-7f84-11eb-94d7-8d671bf9b5bc.png) **[ Flip ]** 簡報教材 ( ppt ) 
   * ![hyperlink](https://user-images.githubusercontent.com/62971778/110240041-f2273b00-7f84-11eb-8655-b1f11caaad30.png) **[ Flip ]** 外部連結 ( hyperlink )
@@ -38,13 +43,14 @@
   * ![pdf](https://user-images.githubusercontent.com/62971778/110238436-95278700-7f7c-11eb-888e-c0e9ecbcb1d6.png) **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
   * ![ifram](https://user-images.githubusercontent.com/62971778/110240080-269af700-7f85-11eb-9d50-b58a4653ee0b.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
   * ![Media 1](https://user-images.githubusercontent.com/62971778/110240087-2c90d800-7f85-11eb-9e8a-36121e375030.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
-  * ![default](https://user-images.githubusercontent.com/62971778/110240117-5518d200-7f85-11eb-8bbe-d79f1e3e86b1.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )<br><br>
-* **課程內容預覽與附件下載**<br>
-<br>在目前支援的項目內容中，能夠使用`長按`來顯示目標的完整名稱，並且可以透過`點擊`來預覽目標詳細內容。
-<br>如下圖所示：<br>
-<br>
+  * ![default](https://user-images.githubusercontent.com/62971778/110240117-5518d200-7f85-11eb-8bbe-d79f1e3e86b1.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )
 
 ### 公告瀏覽
+* **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程公告以及「南台消息」瀏覽**<br>
+<br>介面中會顯示最新的前5項公告資訊，`點擊`目標則會開啟公告瀏覽視窗，如公告項目總數超出5項，則會在右上方顯示「顯示全部」功能按鍵，`點擊`後則會跳轉至完整的公告頁面。
+<br>如下圖所示：<br>
+<br>![NewsDemo1](https://user-images.githubusercontent.com/62971778/110242081-420aff80-7f8f-11eb-9d61-5975a1736db6.gif)
+
 ### 通知瀏覽
 ### 個人設定
 
