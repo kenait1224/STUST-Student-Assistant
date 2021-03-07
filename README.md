@@ -29,15 +29,17 @@
 * **支援部分內容預覽**<br> 
 <br>在「課程公告」、「課程教材」、「課程作業」中目前支援預覽的項目如下：<br>
 **_注意：目前並沒有支援「上傳」等相關功能_**
-  * **[ Flip ]** 簡報教材 ( ppt ) 
-  * **[ Flip ]** 已繳交課程作業 ( exercise successful )
-  * **[ Flip / Flip Class ]** 音訊教材 ( mp3 )
-  * **[ Flip / Flip Class ]** 一般文件教材 ( doc )
-  * **[ Flip / Flip Class ]** 課程作業 ( exercsie ) 
-  * **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
-  * **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
-  * **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
-  * ~**[ Flip Class]** EverCam~ ( 尚未支援 )
+  * ![ppt](https://user-images.githubusercontent.com/62971778/110240037-ecc9f080-7f84-11eb-94d7-8d671bf9b5bc.png) **[ Flip ]** 簡報教材 ( ppt ) 
+  * ![hyperlink](https://user-images.githubusercontent.com/62971778/110240041-f2273b00-7f84-11eb-8655-b1f11caaad30.png) **[ Flip ]** 外部連結 ( hyperlink )
+  * ![homework(successful)](https://user-images.githubusercontent.com/62971778/110240044-f5bac200-7f84-11eb-97a6-a81950c1de4d.png) **[ Flip ]** 已繳交課程作業 ( exercise successful )
+  * ![mp3](https://user-images.githubusercontent.com/62971778/110240052-ffdcc080-7f84-11eb-98a3-3fa4c51bda22.png) **[ Flip / Flip Class ]** 音訊教材 ( mp3 )
+  * ![doc](https://user-images.githubusercontent.com/62971778/110240055-0834fb80-7f85-11eb-8eee-bfa84231af0c.png) **[ Flip / Flip Class ]** 一般文件教材 ( doc )
+  * ![homework](https://user-images.githubusercontent.com/62971778/110240057-0d924600-7f85-11eb-8194-bb282e8f6ad0.png) **[ Flip / Flip Class ]** 課程作業 ( exercsie ) 
+  * ![pdf](https://user-images.githubusercontent.com/62971778/110238436-95278700-7f7c-11eb-888e-c0e9ecbcb1d6.png) **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
+  * ![ifram](https://user-images.githubusercontent.com/62971778/110240080-269af700-7f85-11eb-9d50-b58a4653ee0b.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
+  * ![Media 1](https://user-images.githubusercontent.com/62971778/110240087-2c90d800-7f85-11eb-9e8a-36121e375030.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
+  * ![default](https://user-images.githubusercontent.com/62971778/110240117-5518d200-7f85-11eb-8bbe-d79f1e3e86b1.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )
 ### 公告瀏覽
 ### 通知瀏覽
 ### 個人設定
+
