@@ -29,7 +29,7 @@
 * **支援部分內容預覽與附件下載**<br> 
 <br>在「課程活動」、「課程教材」、「課程作業」中目前支援預覽的項目如下：<br>
 **_注意：目前並沒有支援「上傳/編輯」等相關功能_**
- * ![ppt](https://user-images.githubusercontent.com/62971778/110240037-ecc9f080-7f84-11eb-94d7-8d671bf9b5bc.png) **[ Flip ]** 簡報教材 ( ppt ) 
+  * ![ppt](https://user-images.githubusercontent.com/62971778/110240037-ecc9f080-7f84-11eb-94d7-8d671bf9b5bc.png) **[ Flip ]** 簡報教材 ( ppt ) 
   * ![hyperlink](https://user-images.githubusercontent.com/62971778/110240041-f2273b00-7f84-11eb-8655-b1f11caaad30.png) **[ Flip ]** 外部連結 ( hyperlink )
   * ![homework(successful)](https://user-images.githubusercontent.com/62971778/110240044-f5bac200-7f84-11eb-97a6-a81950c1de4d.png) **[ Flip ]** 已繳交課程作業 ( exercise successful )
   * ![mp3](https://user-images.githubusercontent.com/62971778/110240052-ffdcc080-7f84-11eb-98a3-3fa4c51bda22.png) **[ Flip / Flip Class ]** 音訊教材 ( mp3 )
