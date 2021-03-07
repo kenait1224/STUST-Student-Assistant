@@ -28,10 +28,10 @@
 
 * **支援部分內容預覽**<br> 
 <br>在「課程公告」、「課程教材」、「課程作業」中目前支援的瀏覽項目如下：
-  * ![doc](https://user-images.githubusercontent.com/62971778/110237044-a53b6880-7f74-11eb-872e-54306e1d262a.png) 一般文件教材 ( doc )
-  * ![pdf](https://user-images.githubusercontent.com/62971778/110237091-cf8d2600-7f74-11eb-90c3-c98beabe5b7b.png) 可攜式文件教材 ( pdf )
-  * ![iframe (2)](https://user-images.githubusercontent.com/62971778/110237094-d5830700-7f74-11eb-9193-0e3043af7861.png) 嵌入式網頁教材 ( iframe )
-  * ![media](https://user-images.githubusercontent.com/62971778/110237098-d9af2480-7f74-11eb-9f9c-07e1414cb2d8.png) 外部影片連結教材 ( embed )
+  * 一般文件教材 ( doc )
+  * 可攜式文件教材 ( pdf )
+  * 嵌入式網頁教材 ( iframe )
+  * 外部影片連結教材 ( embed )
   * ~EverCam~ ( 尚未支援 )
 
 ### 公告瀏覽
