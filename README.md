@@ -27,17 +27,17 @@
 <br>![CourseDemo1](https://user-images.githubusercontent.com/62971778/110236448-e0d43380-7f70-11eb-9820-c50b90a177be.gif)
 
 * **支援部分內容預覽**<br> 
-<br>在「課程公告」、「課程教材」、「課程作業」中目前支援瀏覽的項目如下：<br>
+<br>在「課程公告」、「課程教材」、「課程作業」中目前支援預覽的項目如下：<br>
+**_注意：目前並沒有支援「上傳」等相關功能_**
   * **[ Flip ]** 簡報教材 ( ppt ) 
   * **[ Flip ]** 已繳交課程作業 ( exercise successful )
   * **[ Flip / Flip Class ]** 音訊教材 ( mp3 )
   * **[ Flip / Flip Class ]** 一般文件教材 ( doc )
-  * **[ Flip / Flip Class ]** 課程作業 ( exercsie )
+  * **[ Flip / Flip Class ]** 課程作業 ( exercsie ) 
   * **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
   * **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
   * **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
   * ~**[ Flip Class]** EverCam~ ( 尚未支援 )
-
 ### 公告瀏覽
 ### 通知瀏覽
 ### 個人設定
