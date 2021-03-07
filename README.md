@@ -17,8 +17,8 @@
 <br>如下圖所示：<br>
 <br>![CurriculumDemo2](https://user-images.githubusercontent.com/62971778/110234350-f9d6e780-7f64-11eb-857d-0490a8e1db36.gif)
 
-* **_顯示上課位置(預期推出)_**<br>
-<br>_您可以透過再次點擊完整內容中的目標項目來顯示課程所在位置_。
+* ~**_顯示上課位置_**~**_( 尚未推出 )_**<br>
+<br>~_您可以透過再次點擊完整內容中的目標項目來顯示課程所在位置_~。
 
 ### 課程瀏覽
 * **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程內容瀏覽**<br>
