@@ -52,5 +52,23 @@
 <br>![NewsDemo1](https://user-images.githubusercontent.com/62971778/110242081-420aff80-7f8f-11eb-9d61-5975a1736db6.gif)
 
 ### 通知瀏覽
+* **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程作業與測驗通知**<br>
+<br>介面中能夠透過左右`滑動`來切換 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) ，並且`點擊`項目之後則會顯示通知內容。
+<br>如下圖所示：<br>
+<br>![MessageDemo1](https://user-images.githubusercontent.com/62971778/111063415-47b19980-84e9-11eb-9776-4edaa2be8a6b.gif)
+
+
+* ~**_通知提醒功能_**~**_( 尚未推出 )_**<br>
+<br>~_您可以透過個人設定項目中的「通知提醒」自訂通知提醒時間，系統將會在到期日前提發送通知醒您_~。
+
 ### 個人設定
+* **帳號資訊以及相關設定**<br>
+<br>能夠查看當前使用者的用戶資訊，並且能根據使用者習慣更改其設定內容。<br><br>
+  * **用戶資訊** — 查看當前使用者資訊。
+  * **通知提醒** — 設定通知提醒時間。
+  * **初始畫面** — 設定初始畫面項目。
+  * **同步課表** — 系統啟動時會將已取得課表與課程內容進行比對，如不相符則會再次取得課表內容。
+  * **離線模式** — 啟用此模式將不會檢測網路狀態，會直接採用本地課表進行瀏覽。
+<br><br>![PersonalDemo1](https://user-images.githubusercontent.com/62971778/111063409-42ece580-84e9-11eb-8add-c456bb8b241d.gif)
+
 
