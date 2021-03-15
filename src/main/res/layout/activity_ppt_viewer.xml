@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context="activity.PPT_Viewer">
+    <LinearLayout
+        android:id="@+id/ppt_viewer_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:background="@drawable/background_xml_ppt_viewer_title">
+
+        <ImageButton
+            android:id="@+id/ppt_viewer_title_union"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:onClick="returnPage"
+            android:background="@android:color/transparent"
+            android:foreground="@drawable/foreground_ripple"
+            android:src="@drawable/ic_common_union" />
+        <TextView
+            android:id="@+id/ppt_viewer_title_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:textColor="@color/colorBlack"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+        <RecyclerViewController.Course.PinchZoomRecyclerView.ScaleRecyclerView
+            android:id="@+id/course_detail_attachment_ppt_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:scrollbars="vertical"
+            />
+
+</LinearLayout>

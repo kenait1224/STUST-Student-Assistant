@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.kenait.stust",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 4,
+      "versionName": "v1.0.1",
+      "enabled": true,
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

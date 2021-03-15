@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_detail_attachment_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_weight="0.125"
+    android:background="@drawable/background_xml_detail_dialog_file"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/course_detail_attachment_file_icon"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_attachment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/course_detail_attachment_file_button"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/background_xml_detail_dialog_open_button"
+        android:stateListAnimator="@null"
+        android:foreground="@drawable/foreground_ripple"
+        android:text="開啟檔案"
+        android:textSize="13sp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/colorGray3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

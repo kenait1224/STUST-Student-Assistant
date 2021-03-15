@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Loin_Page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_other_page"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="activity.Login_Page">
+
+    <ImageButton
+        android:id="@+id/login_page_union"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_common_union"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/foreground_ripple"
+        android:onClick="Union"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="148dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:gravity="center_vertical"
+        android:text="@string/Login_title_chs"
+        android:textColor="@color/colorBlack"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/input_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="343dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:autofillHints="no"
+            android:background="@drawable/background_xml_input"
+            android:ems="10"
+            android:hint="@string/Username_hint_chs"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGray"
+            android:textSize="20sp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:autofillHints="no"
+            android:background="@drawable/background_xml_input"
+            android:ems="10"
+            android:hint="@string/Password_hint_chs"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorGray"
+            android:textSize="20sp"
+            tools:ignore="LabelFor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            />
+        <TextView
+            android:id="@+id/failed_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submit_layout"
+        android:layout_width="343dp"
+        android:layout_height="104dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.63"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login_page_enter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_xml_button_submit"
+            android:foreground="@drawable/foreground_ripple"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/Login_chs"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="Submit"
+            android:textColor="@color/colorWhite"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/Login_help_chs"
+            android:textColor="@color/colorGray1"
+            android:textSize="15sp"
+            android:foreground="@drawable/foreground_ripple"
+            android:onClick="Registration"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

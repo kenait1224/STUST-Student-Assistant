@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Logged_Page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_xml_main_page"
+    tools:context="activity.Main_Page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:id="@+id/stust_logo"
+        android:background="@drawable/background_xml_main_page_stust"
+        android:elevation="7dp"
+        app:layout_constraintLeft_toLeftOf="@id/background"
+        app:layout_constraintRight_toRightOf="@id/background"
+        app:layout_constraintTop_toTopOf="@id/background"
+        app:layout_constraintBottom_toBottomOf="@id/background"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/image_stust_logo"
+            android:gravity="center_horizontal|center_vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="236dp"></ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/stust_logo_text"
+        android:layout_width="146dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/background_xml_main_page_stust_text"
+        android:elevation="7dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/stust_logo"
+        app:layout_constraintLeft_toLeftOf="@id/stust_logo"
+        app:layout_constraintRight_toRightOf="@id/stust_logo"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="414dp"
+        android:layout_height="619dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_image_main_page"
+        android:elevation="5dp"
+        android:outlineProvider="bounds"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="167dp"
+        android:height="52dp"
+        android:background="@drawable/background_xml_button_login"
+        android:fontFamily="@font/roboto_bold"
+        android:foreground="@drawable/foreground_ripple"
+        android:onClick="Login"
+        android:stateListAnimator="@null"
+        android:text="@string/Login_chs"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/about_button"
+        app:layout_constraintTop_toBottomOf="@id/background"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="167dp"
+        android:height="52dp"
+        android:foreground="@drawable/foreground_ripple"
+        android:background="@drawable/background_xml_button_about"
+        android:fontFamily="@font/roboto_bold"
+        android:onClick="About"
+        android:text="@string/About_chs"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/login_button"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="649dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
