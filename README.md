@@ -4,7 +4,7 @@
 請使用校內共通帳戶進行登入。
 ![STUST-Student-Assistant](https://user-images.githubusercontent.com/62971778/110233062-731e0c80-7f5c-11eb-8cc3-783f0c1196c9.png)
 ## 版本資訊
-當前版本：v1.0.0
+當前版本：v1.0.1
 ## 功能介紹
 ### 課表瀏覽
 * **自動追蹤日期**<br>
