@@ -44,7 +44,6 @@ public class FlipClassNewsDialogCrawler {
 
     private void BuildTargetDetail(Document document) {
         getTargetContent(document);
-    //    getTargetAttachment(document);
         TargetDetail = new Detail(AttachmentLink, Target.getTitle(), Html_Content, Post_Time);
     }
 
@@ -64,7 +63,6 @@ public class FlipClassNewsDialogCrawler {
             }
         }
     }
-
 
     /*目標附件名稱、連結*/
     /*

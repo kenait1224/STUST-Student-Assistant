@@ -50,21 +50,31 @@ public class FlipClassMessageDialogCrawler {
     }
 
 
-    /*目標提供訊息，以 HTML 字串儲存，並避開附件列表*/
+    /*目標提供訊息，以 HTML 字串儲存，並匯出附件列表*/
     private void getTargetContent(Document document) {
         Elements elements = document.select("dl");
         for (int k = 0; k < elements.size(); k++) {
             if (elements.get(k).children().size() > 4) {
                 for (int i = 0; i < elements.get(k).children().size(); i++) {
-                   Html_Content += elements.get(k).children().get(i).toString();
-                   Html_Content += (i % 2 == 0) ? "\t：" : "<br><br>";
+                    if (elements.get(k).children().get(i).toString().indexOf("附件") != -1 && i + 1 < elements.get(k).children().size()) {
+                            Elements attachmentList = elements.get(k).children().get(i + 1).select("li");
+                            for (int j = 0; j < attachmentList.size(); j++) {
+                                try {
+                                    String file = attachmentList.get(0).select("a").attr("href");
+                                    String name = attachmentList.get(0).select("span.text").get(0).childNode(0).toString();
+                                    AttachmentLink.add(new Attachment(name, file));
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                            return;
+                    }
+                    Html_Content += elements.get(k).children().get(i).toString().replace("</dt>", "\t : </dt>") + "<br>";
                 }
             }
         }
-    }
 
-
-    /*目標附件名稱、連結*/
+        /*目標附件名稱、連結*/
     /*
     private void getTargetAttachment(Document document) {
         try {
@@ -88,4 +98,7 @@ public class FlipClassMessageDialogCrawler {
         return target.substring(start, end);
     }
     */
+
+    }
 }
+

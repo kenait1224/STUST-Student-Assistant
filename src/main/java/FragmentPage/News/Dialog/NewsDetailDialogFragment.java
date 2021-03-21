@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -25,14 +26,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.sothree.slidinguppanel.ScrollableViewHelper;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
-import org.sufficientlysecure.htmltextview.HtmlTextView;
-import org.sufficientlysecure.htmltextview.OnClickATagListener;
-
 import ApplicationPopupWindow.FullNamePopupWindow;
+import Data.CrawlerData.Common.Detail;
 import FontRatio.Ratio_Detail_Dialog;
 import FontSet.FontSetter;
 import RecyclerViewController.Common.DetailRecyclerAdapter;
-import Data.CrawlerData.Common.Detail;
 import activity.R;
 
 public class NewsDetailDialogFragment extends DialogFragment {
@@ -49,15 +47,15 @@ public class NewsDetailDialogFragment extends DialogFragment {
     int Width;
 
 
-    public NewsDetailDialogFragment(int source , int width, int height, float density, Detail detail) {
-            Source = source;
-            Height = (int) (height * 0.8);
-            Width = (int) (width * 0.9);
-            DisplayHeight = height;
-            DisplayWidth = width;
-            ratio_course = new Ratio_Detail_Dialog(Width, Height);
-            Density = density;
-            myDetail = detail;
+    public NewsDetailDialogFragment(int source, int width, int height, float density, Detail detail) {
+        Source = source;
+        Height = (int) (height * 0.8);
+        Width = (int) (width * 0.9);
+        DisplayHeight = height;
+        DisplayWidth = width;
+        ratio_course = new Ratio_Detail_Dialog(Width, Height);
+        Density = density;
+        myDetail = detail;
     }
 
     @Override
@@ -82,22 +80,29 @@ public class NewsDetailDialogFragment extends DialogFragment {
         int HtmlContent_padding = ratio_course.getDetailDialogHtmlViewPadding();
 
         /*--------目標內容 HTML View 建置--------*/
-        HtmlTextView htmlTextView = (HtmlTextView) view.findViewById(R.id.detail_html_content);
-        htmlTextView.setOnClickATagListener(new OnClickATagListener() {
-            @Override
-            public boolean onClick(View widget, String spannedText, @Nullable String href) {
-                try {
-                    PageIntent(href);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    System.out.println(getResources().getString(R.string.AttachmentIntentFail));
-                }
-                return true;
-            }
-        });
-        htmlTextView.setHtml(myDetail.getHtml_Content());
-        htmlTextView.setPadding(HtmlContent_padding, HtmlContent_padding, HtmlContent_padding, (int) (ratio_course.getDetailDialogAttachmentHeight() * 1.25));
+        WebView htmlTextView = (WebView) view.findViewById(R.id.detail_html_content);
+        if (myDetail != null && myDetail.getHtml_Content() != null)
+            htmlTextView.loadDataWithBaseURL(null, myDetail.getHtml_Content(), "text/html", "utf-8", null);
+        htmlTextView.setPadding(HtmlContent_padding, HtmlContent_padding, HtmlContent_padding, (int) (ratio_course.getDetailDialogAttachmentHeight() * 2));
         /*--------目標內容 HTML View 建置--------*/
+
+//        /*--------目標內容 HTML View 建置--------*/
+//        HtmlTextView htmlTextView = (HtmlTextView) view.findViewById(R.id.detail_html_content);
+//        htmlTextView.setOnClickATagListener(new OnClickATagListener() {
+//            @Override
+//            public boolean onClick(View widget, String spannedText, @Nullable String href) {
+//                try {
+//                    PageIntent(href);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                    System.out.println(getResources().getString(R.string.AttachmentIntentFail));
+//                }
+//                return true;
+//            }
+//        });
+//        htmlTextView.setHtml(myDetail.getHtml_Content());
+//        htmlTextView.setPadding(HtmlContent_padding, HtmlContent_padding, HtmlContent_padding, (int) (ratio_course.getDetailDialogAttachmentHeight() * 1.25));
+//        /*--------目標內容 HTML View 建置--------*/
 
         /*--------標題狀態建置--------*/
         ImageButton union = (ImageButton) view.findViewById(R.id.detail_dialog_union);
@@ -115,7 +120,7 @@ public class NewsDetailDialogFragment extends DialogFragment {
             public void onClick(View v) {
                 String target = name.getText().toString();
                 FullNamePopupWindow fullNamePopupWindow = new FullNamePopupWindow(getContext(), target, (int) (DisplayWidth * 0.5), Density);
-                int offsetX = (int) Math.abs(DetailDialogTextTitle.getWidth() - 0.5 * fullNamePopupWindow.getWidth() - 0.45 *DisplayWidth);
+                int offsetX = (int) Math.abs(DetailDialogTextTitle.getWidth() - 0.5 * fullNamePopupWindow.getWidth() - 0.45 * DisplayWidth);
                 PopupWindowCompat.showAsDropDown(fullNamePopupWindow, DetailDialogTextTitle, offsetX, 0, Gravity.START);
             }
         });
@@ -139,7 +144,7 @@ public class NewsDetailDialogFragment extends DialogFragment {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.detail_attachment_list);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(layoutManager);
-        DetailRecyclerAdapter detailRecyclerAdapter = new DetailRecyclerAdapter(Source,Density, ratio_course, myDetail.getAttachmentLink(), getActivity(), getContext());
+        DetailRecyclerAdapter detailRecyclerAdapter = new DetailRecyclerAdapter(Source, Density, ratio_course, myDetail.getAttachmentLink(), getActivity(), getContext());
         recyclerView.setAdapter(detailRecyclerAdapter);
         detailRecyclerAdapter.notifyDataSetChanged();
         /*--------附件列表 RecyclerView 建置--------*/

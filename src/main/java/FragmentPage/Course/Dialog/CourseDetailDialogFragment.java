@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -39,9 +40,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.sothree.slidinguppanel.ScrollableViewHelper;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
-
-import org.sufficientlysecure.htmltextview.HtmlTextView;
-import org.sufficientlysecure.htmltextview.OnClickATagListener;
 
 import java.io.File;
 
@@ -104,23 +102,31 @@ public class CourseDetailDialogFragment extends DialogFragment implements Dialog
         int AttachmentLayout_height = ratio_detail_dialog.getDetailDialogAttachmentHeight();
         int HtmlContent_padding = ratio_detail_dialog.getDetailDialogHtmlViewPadding();
 
+
         /*--------目標內容 HTML View 建置--------*/
-        HtmlTextView htmlTextView = (HtmlTextView) view.findViewById(R.id.detail_html_content);
-        htmlTextView.setOnClickATagListener(new OnClickATagListener() {
-            @Override
-            public boolean onClick(View widget, String spannedText, @Nullable String href) {
-                try {
-                    PageIntent(href);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    System.out.println(getResources().getString(R.string.AttachmentIntentFail));
-                }
-                return true;
-            }
-        });
-        if (myDetail.getHtml_Content()!= null)
-            htmlTextView.setHtml(myDetail.getHtml_Content());
-        htmlTextView.setPadding(HtmlContent_padding, HtmlContent_padding, HtmlContent_padding, (int) (ratio_detail_dialog.getDetailDialogAttachmentHeight()*1.25));
+        final WebView htmlTextView = (WebView) view.findViewById(R.id.detail_html_content);
+        if (myDetail != null && myDetail.getHtml_Content()!= null)
+            htmlTextView.loadDataWithBaseURL(null, myDetail.getHtml_Content(), "text/html", "utf-8", null);
+        htmlTextView.setPadding(HtmlContent_padding, HtmlContent_padding, HtmlContent_padding, (int) (ratio_detail_dialog.getDetailDialogAttachmentHeight()*2));
+        /*--------目標內容 HTML View 建置--------*/
+
+        /*--------目標內容 HTML View 建置--------*/
+//        HtmlTextView htmlTextView = (HtmlTextView) view.findViewById(R.id.detail_html_content);
+//        htmlTextView.setOnClickATagListener(new OnClickATagListener() {
+//            @Override
+//            public boolean onClick(View widget, String spannedText, @Nullable String href) {
+//                try {
+//                    PageIntent(href);
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                    System.out.println(getResources().getString(R.string.AttachmentIntentFail));
+//                }
+//                return true;
+//            }
+//        });
+//        if (myDetail.getHtml_Content()!= null)
+//            htmlTextView.setHtml(myDetail.getHtml_Content());
+//        htmlTextView.setPadding(HtmlContent_padding, HtmlContent_padding, HtmlContent_padding, (int) (ratio_detail_dialog.getDetailDialogAttachmentHeight()*1.25));
         /*--------目標內容 HTML View 建置--------*/
 
         /*--------標題狀態建置--------*/

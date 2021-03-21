@@ -8,13 +8,13 @@ public class Detail {
     String Name;
     String Post_Time;
     String Views;
-    String Html_Content = "<h6>沒有提供相關訊息，請查閱附件清單。</h6>";
+    String Html_Content = "<h4>沒有提供相關訊息，請查閱附件清單。</h4>";
     String HyperLink;
 
     public Detail(String name,String html_Content) {
         Name = name;
         if(html_Content.compareTo("") != 0)
-            Html_Content = html_Content;
+            Html_Content = html_Content + "<br><br>";
     }
 
     public Detail(ArrayList<Attachment> attachmentLink,String name, String html_Content , String post_Time) {
@@ -22,7 +22,7 @@ public class Detail {
         Post_Time = post_Time;
         AttachmentLink = attachmentLink;
         if(html_Content.compareTo("") != 0)
-            Html_Content = html_Content;
+            Html_Content = html_Content + "<br><br>";
     }
 
     public Detail(ArrayList<Attachment> attachmentLink,String name, String html_Content , String post_Time, String views) {
@@ -31,7 +31,7 @@ public class Detail {
         Post_Time = post_Time;
         AttachmentLink = attachmentLink;
         if(html_Content.compareTo("") != 0)
-            Html_Content = html_Content;
+            Html_Content = html_Content + "<br><br>";
     }
 
     public Detail(ArrayList<Attachment> attachmentLink,String name, String html_Content, String post_Time, String views, String hyperLink) {
@@ -41,7 +41,7 @@ public class Detail {
         AttachmentLink = attachmentLink;
         HyperLink = hyperLink;
         if(html_Content.compareTo("") != 0)
-            Html_Content = html_Content;
+            Html_Content = html_Content + "<br><br>";
 
     }
 
@@ -52,7 +52,7 @@ public class Detail {
         AttachmentLink = attachmentLink;
         ImageLinkList = imageLinkList;
         if(html_Content.compareTo("") != 0)
-            Html_Content = html_Content;
+            Html_Content = html_Content + "<br><br>";
     }
 
     public ArrayList<Attachment> getAttachmentLink() {

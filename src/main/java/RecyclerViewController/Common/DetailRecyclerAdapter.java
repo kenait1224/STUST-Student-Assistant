@@ -37,13 +37,13 @@ public class DetailRecyclerAdapter extends RecyclerView.Adapter<DetailRecyclerAd
     private ArrayList<Attachment> Attachments;
     int Source;
 
-    public DetailRecyclerAdapter(int source,float density, Ratio_Detail_Dialog ratio_course, ArrayList<Attachment> attachments, Activity activity, Context context) {
+    public DetailRecyclerAdapter(int source, float density, Ratio_Detail_Dialog ratio_course, ArrayList<Attachment> attachments, Activity activity, Context context) {
         Source = source;
         Density = density;
         ratioDetail = ratio_course;
         Attachments = attachments;
         myContext = context;
-        myActivity =  activity;
+        myActivity = activity;
     }
 
     @NonNull
@@ -59,40 +59,40 @@ public class DetailRecyclerAdapter extends RecyclerView.Adapter<DetailRecyclerAd
         holder.attachment_icon.getLayoutParams().height = ratioDetail.getDetailDialogFileIconHeight();
         holder.attachment_button.getLayoutParams().width = ratioDetail.getDetailDialogFileButtonWidth();
         holder.attachment_button.getLayoutParams().height = ratioDetail.getDetailDialogFileButtonHeight();
-        holder.attachment_icon.setImageResource(getFileIcon((Source == 0)?Attachments.get(position).Link:Attachments.get(position).Name.replace(" ","")));
+        holder.attachment_icon.setImageResource(getFileIcon((Source == 0) ? Attachments.get(position).Link : Attachments.get(position).Name.replace(" ", "")));
         holder.attachment_button.setText(Attachments.get(position).Name);
         holder.attachment_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 System.out.println(Attachments.get(position).Link);
                 if (checkPermissions()) {
-                    String Link = ((Attachments.get(position).Link.indexOf("http") == -1)?STUST_URL:"")+Attachments.get(position).Link;
+                    String Link = ((Attachments.get(position).Link.indexOf("http") == -1) ? STUST_URL : "") + Attachments.get(position).Link;
                     Long MyDownloadID = null;
                     final Toast Start = Toast.makeText(myContext, myContext.getResources().getString(R.string.StartDownload) + Attachments.get(position).Name, Toast.LENGTH_LONG);
-                        try {
-                            Start.show();
-                            AttachmentDownloader attachmentDownloader = new AttachmentDownloader(Source,Link,Attachments.get(position).Name);
-                            DownloadManager manager = (DownloadManager) myActivity.getSystemService(myContext.DOWNLOAD_SERVICE);
-                            MyDownloadID = manager.enqueue(attachmentDownloader);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            System.out.println(myContext.getResources().getString(R.string.DownloadFail));
-                        }
-                        final Long finalMyDownloadID = MyDownloadID;
-                        BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
-                            @Override
-                            public void onReceive(Context context, Intent intent) {
-                                Long ID = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
-                                if (ID.compareTo(finalMyDownloadID) == 0) {
-                                    Start.cancel();
-                                    Toast.makeText(context, Attachments.get(position).Name + myContext.getResources().getString(R.string.DownloadSuccessful), Toast.LENGTH_SHORT).show();
-                                }
+                    try {
+                        Start.show();
+                        AttachmentDownloader attachmentDownloader = new AttachmentDownloader(Source, Link, Attachments.get(position).Name);
+                        DownloadManager manager = (DownloadManager) myActivity.getSystemService(myContext.DOWNLOAD_SERVICE);
+                        MyDownloadID = manager.enqueue(attachmentDownloader);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        System.out.println(myContext.getResources().getString(R.string.DownloadFail));
+                    }
+                    final Long finalMyDownloadID = MyDownloadID;
+                    BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+                        @Override
+                        public void onReceive(Context context, Intent intent) {
+                            Long ID = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
+                            if (ID.compareTo(finalMyDownloadID) == 0) {
+                                Start.cancel();
+                                Toast.makeText(context, Attachments.get(position).Name + myContext.getResources().getString(R.string.DownloadSuccessful), Toast.LENGTH_SHORT).show();
                             }
-                        };
-                        myActivity.registerReceiver(broadcastReceiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+                        }
+                    };
+                    myActivity.registerReceiver(broadcastReceiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
                 } else {
-                    Toast.makeText(myContext,myContext.getResources().getString(R.string.PermissionsDenied),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(myContext, myContext.getResources().getString(R.string.PermissionsDenied), Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -120,12 +120,12 @@ public class DetailRecyclerAdapter extends RecyclerView.Adapter<DetailRecyclerAd
         }
     }
 
-    private boolean checkPermissions(){
+    private boolean checkPermissions() {
         return (EasyPermissions.hasPermissions(myContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) && EasyPermissions.hasPermissions(myContext, Manifest.permission.READ_EXTERNAL_STORAGE));
     }
 
     private int getFileIcon(String type) {
-            type = type.substring(type.lastIndexOf(".") + 1, type.length()).toLowerCase();
+        type = type.substring(type.lastIndexOf(".") + 1, type.length()).toLowerCase();
         switch (type) {
             case "pdf":
                 return R.drawable.ic_course_detail_menu_pdf;
@@ -143,6 +143,10 @@ public class DetailRecyclerAdapter extends RecyclerView.Adapter<DetailRecyclerAd
             case "7z":
             case "tar":
                 return R.drawable.ic_attachment;
+            case "jpg":
+            case "png":
+            case "gif":
+                return R.drawable.ic_course_detail_menu_embed_ver1;
             case "mp4":
             case "avi":
             case "wmv":
