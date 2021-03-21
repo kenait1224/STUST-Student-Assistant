@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/news_group_layout"
+    android:background="@drawable/background_xml_news_group"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    tools:context=".News_Page"
+    >
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:id="@+id/news_group_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="課程公告 Flip"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center_vertical"
+            />
+        <Button
+            android:id="@+id/news_group_show_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:lines="1"
+            android:ellipsize="end"
+            android:text="顯示全部"
+            android:foreground="@drawable/foreground_ripple"
+            android:onClick="Union"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:textColor="@color/colorBlue"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_no_data"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_xml_news_item"
+        android:text="查無公告"
+        android:textSize="17sp"
+        android:gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_item_RV"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.9"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        />
+
+</LinearLayout>

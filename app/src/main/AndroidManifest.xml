@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="activity">
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/stust_ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    android:screenOrientation="portrait"
+    android:configChanges="orientation|keyboardHidden">
+    <activity
+        android:name="activity.News_Page"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden" />
+    <activity
+        android:name="activity.Course_Page"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden" />
+    <activity
+        android:name="activity.UserInterface_Page"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden" />
+    <activity
+        android:name="activity.About_Page"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden" />
+    <activity
+        android:name="activity.Login_Page"
+        android:windowSoftInputMode="adjustPan|adjustResize"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden" />
+    <activity
+        android:name="activity.Main_Page"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="activity.PPT_Viewer"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden" />
+</application>
+
+</manifest>
+
+
+

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.fresco:animated-webp:0.12.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50f9436acabf36ddbfaabd9f386ee158/jetified-animated-webp-0.12.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50f9436acabf36ddbfaabd9f386ee158/jetified-animated-webp-0.12.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50f9436acabf36ddbfaabd9f386ee158/jetified-animated-webp-0.12.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/animated-webp/0.12.0/aab26f7eab63b76d44d8293d18335a90fc18f5a/animated-webp-0.12.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/animated-webp/0.12.0/d85d13e77ba6d42eeaea54f0595211494f6faca2/animated-webp-0.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

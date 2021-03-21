@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/course_detail_fragmelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:padding="4dp"
+    >
+        <LinearLayout
+            android:id="@+id/course_detail_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/background_xml_course_detail_menu_content"
+            android:foreground="@drawable/foreground_ripple"
+            android:paddingLeft="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/course_detail_icon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/course_detail_content"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.9"
+                android:text="Course Content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:ellipsize="end"
+                android:lines="1"
+                />
+        </LinearLayout>
+
+</FrameLayout>

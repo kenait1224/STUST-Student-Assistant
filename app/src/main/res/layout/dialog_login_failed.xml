@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Error_Dialog_Layout"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/background_xml_loading_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.8"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/failed_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_inform_dialog_failed_new"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="登入錯誤"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="請確認登入帳號是否已更改以及網路連線是否正常。"
+            android:padding="5dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Error_Dialog_Dismiss"
+        android:text="確認"
+        android:textSize="15sp"
+        android:textColor="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:foreground="@drawable/foreground_ripple"
+        android:background="@drawable/background_xml_error_dialog"/>
+
+</LinearLayout>

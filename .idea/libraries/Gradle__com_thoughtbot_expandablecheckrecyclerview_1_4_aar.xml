@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.thoughtbot:expandablecheckrecyclerview:1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee24117faaae13fd1c3f629eb109b5a8/jetified-expandablecheckrecyclerview-1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee24117faaae13fd1c3f629eb109b5a8/jetified-expandablecheckrecyclerview-1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ee24117faaae13fd1c3f629eb109b5a8/jetified-expandablecheckrecyclerview-1.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtbot/expandablecheckrecyclerview/1.4/dd3d23f0bba406d1cdc0614facff01a28eb107ce/expandablecheckrecyclerview-1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thoughtbot/expandablecheckrecyclerview/1.4/a974191ab11bebf61e170f95a4d1868efea7d616/expandablecheckrecyclerview-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

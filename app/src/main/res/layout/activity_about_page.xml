@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/About_Page"
+    android:background="@drawable/background_image_other_page"
+    tools:context="activity.About_Page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/about_page_home"
+        >
+
+        <Button
+            android:id="@+id/about_page_union"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_common_union"
+            android:foreground="@drawable/foreground_ripple"
+            android:onClick="Union"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/about_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center_vertical"
+            android:text="@string/Contact_title_chs"
+            android:textColor="@color/colorBlack"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center_vertical"
+            android:text="@string/About_title_chs"
+            android:textColor="@color/colorBlack"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/contact_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.17"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/about_page_linear"
+        android:layout_width="333dp"
+        android:layout_height="149dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.35"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/version_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="25sp"
+                android:text="@string/Version_title_chs"
+                android:textColor="@color/colorBlack"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/version_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="25sp"
+                android:text="@string/Version"
+                android:textColor="@color/colorGray1"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.0"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/updated_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="25sp"
+                android:text="@string/Updated_title_chs"
+                android:textColor="@color/colorBlack"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/updated_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="25sp"
+                android:text="@string/Updated"
+                android:textColor="@color/colorGray1"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.0"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/developer_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="25sp"
+                android:text="@string/Developer_title_chs"
+                android:textColor="@color/colorBlack"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/developer_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="25sp"
+                android:text="@string/Developer"
+                android:textColor="@color/colorGray1"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contact_content"
+        android:layout_width="323dp"
+        android:layout_height="49dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/Email"
+        android:textColor="@color/colorGray1"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
