@@ -45,7 +45,7 @@
   * ![pdf](sampledata/icon/pdf.png) **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
   * ![ifram](sampledata/icon/ifram.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
   * ![Media](sampledata/icon/Media.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
-  * ![default](sampledata/icon/default.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )
+  * ![default](sampledata/icon/default.png)~**[ Flip Class]** EverCam~( 尚未支援 )
 
 ### 公告瀏覽
 * **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程公告以及「南台消息」瀏覽**<br>
