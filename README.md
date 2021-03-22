@@ -36,28 +36,29 @@
 * **支援部分內容瀏覽與附件下載**<br> 
 <br>在「課程活動」、「課程教材」、「課程作業」中目前支援瀏覽的項目如下：<br>
 **_注意：目前並沒有支援「上傳/編輯」等相關功能_**
-  * ![ppt](sampledata\icon\ppt.png) **[ Flip ]** 簡報教材 ( ppt ) 
-  * ![hyperlink](sampledata\icon\hyperlink.png) **[ Flip ]** 外部連結 ( hyperlink )
-  * ![homework(successful)](sampledata\icon\homework(successful).png) **[ Flip ]** 已繳交課程作業 ( exercise successful )
-  * ![mp3](sampledata\icon\mp3.png) **[ Flip / Flip Class ]** 音訊教材 ( mp3 )
-  * ![doc](sampledata\icon\doc.png) **[ Flip / Flip Class ]** 一般文件教材 ( doc )
-  * ![homework](sampledata\icon\homework.png) **[ Flip / Flip Class ]** 課程作業 ( exercsie ) 
-  * ![pdf](sampledata\icon\pdf.png) **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
-  * ![ifram](sampledata\icon\ifram.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
-  * ![Media](sampledata\icon\Media.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
-  * ![default](sampledata\icon\default.png) ~**[ Flip Class]** EverCam~ ( 尚未支援 )
+  * ![ppt](sampledata/icon/ppt.png) **[ Flip ]** 簡報教材 ( ppt ) 
+  * ![hyperlink](sampledata/icon/hyperlink.png) **[ Flip ]** 外部連結 ( hyperlink )
+  * ![homework(successful)](sampledata/icon/homework(successful).png) **[ Flip ]** 已繳交課程作業 ( exercise successful )
+  * ![mp3](sampledata/icon/mp3.png) **[ Flip / Flip Class ]** 音訊教材 ( mp3 )
+  * ![doc](sampledata/icon/doc.png) **[ Flip / Flip Class ]** 一般文件教材 ( doc )
+  * ![homework](sampledata/icon/homework.png) **[ Flip / Flip Class ]** 課程作業 ( exercsie ) 
+  * ![pdf](sampledata/icon/pdf.png) **[ Flip / Flip Class ]** 可攜式文件教材 ( pdf )
+  * ![ifram](sampledata/icon/ifram.png) **[ Flip / Flip Class ]** 嵌入式網頁教材 ( iframe )
+  * ![Media](sampledata/icon/Media.png) **[ Flip / Flip Class ]** 外部影片連結教材 ( embed )
+  * ![default](sampledata/icon/default.png) ~ 
+  **[ Flip Class]** EverCam~ ( 尚未支援 )
 
 ### 公告瀏覽
 * **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程公告以及「南台消息」瀏覽**<br>
 <br>介面中會顯示最新的前5項公告資訊，`點擊`目標則會開啟公告瀏覽視窗，如公告項目總數超出5項，則會在右上方顯示「顯示全部」功能按鍵，`點擊`後則會跳轉至完整的公告頁面。
 <br>如下圖所示：<br>
-<br>![NewsDemo1](sampledata\NewsDemo1.gif)
+<br>![NewsDemo1](sampledata/NewsDemo1.gif)
 
 ### 通知瀏覽
 * **支援 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) 課程作業與測驗通知**<br>
 <br>介面中能夠透過左右`滑動`來切換 [Flip](https://flip.stust.edu.tw/) 以及 [Flip Class](https://flipclass.stust.edu.tw/) ，並且`點擊`項目之後則會顯示通知內容。
 <br>如下圖所示：<br>
-<br>![MessageDemo1](sampledata\MessageDemo1.gif)
+<br>![MessageDemo1](sampledata/MessageDemo1.gif)
 
 
 * ~**_通知提醒功能_**~**_( 尚未推出 )_**<br>
@@ -71,6 +72,6 @@
   * **初始畫面** — 設定初始畫面項目。
   * **同步課表** — 系統啟動時會將已取得課表與課程內容進行比對，如不相符則會再次取得課表內容。
   * **離線模式** — 啟用此模式將不會檢測網路狀態，會直接採用本地課表進行瀏覽。
-<br><br>![PersonalDemo1](sampledata\PersonalDemo1.gif)
+<br><br>![PersonalDemo1](sampledata/PersonalDemo1.gif)
 
 
