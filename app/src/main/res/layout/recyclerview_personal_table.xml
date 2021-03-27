@@ -51,6 +51,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
+            android:textColor="@color/colorGray3"
             android:gravity="center_vertical|left"
             android:text="帳號設定"
             android:textSize="18sp" />

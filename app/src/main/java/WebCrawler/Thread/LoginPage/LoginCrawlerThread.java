@@ -9,6 +9,7 @@ import WebCrawler.Crawler.Outline.CourseSelectionSystem.CurriculumCrawler;
 import WebCrawler.Crawler.Outline.Flip.FlipBulletinCrawler;
 import WebCrawler.Crawler.Outline.Flip.FlipCourseCrawler;
 import WebCrawler.Crawler.Outline.Flip.FlipMessageCrawler;
+import WebCrawler.Crawler.Outline.Flip.FlipUserInfoCrawler;
 import WebCrawler.Crawler.Outline.FlipClass.FlipClassBulletinCrawler;
 import WebCrawler.Crawler.Outline.FlipClass.FlipClassCourseCrawler;
 import WebCrawler.Crawler.Outline.FlipClass.FlipClassMessageCrawler;
@@ -21,6 +22,7 @@ public class LoginCrawlerThread extends Thread {
     FlipCourseCrawler flipCourseCrawler;
     FlipBulletinCrawler flipBulletinCrawler;
     FlipMessageCrawler flipMessageCrawler;
+    FlipUserInfoCrawler flipUserInfoCrawler;
     FlipClassUserInfoCrawler flipClassUserInfoCrawler;
     FlipClassBulletinCrawler flipClassBulletinCrawler;
     FlipClassMessageCrawler flipClassMessageCrawler;
@@ -34,6 +36,7 @@ public class LoginCrawlerThread extends Thread {
         flipCourseCrawler = new FlipCourseCrawler();
         flipBulletinCrawler = new FlipBulletinCrawler();
         flipMessageCrawler = new FlipMessageCrawler();
+        flipUserInfoCrawler = new FlipUserInfoCrawler();
         flipClassUserInfoCrawler = new FlipClassUserInfoCrawler();
         flipClassBulletinCrawler = new FlipClassBulletinCrawler();
         flipClassMessageCrawler = new FlipClassMessageCrawler();
@@ -59,8 +62,10 @@ public class LoginCrawlerThread extends Thread {
     public void getUserInfo(){
         try {
             crawlerInterface.CrawlerLoading(R.string.UserInfoLoading);
-            flipClassUserInfoCrawler.Getting();
-            flipClassUserInfoCrawler.Building();
+            flipUserInfoCrawler.Getting();
+            flipUserInfoCrawler.Building();
+//            flipClassUserInfoCrawler.Getting();
+//            flipClassUserInfoCrawler.Building();
         }
         catch (Exception e){
             System.out.println("getUserInfo Error");

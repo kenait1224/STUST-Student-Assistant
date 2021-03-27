@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7cd34707-49d1-4098-ab93-4e9dce54ccce" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Copy_of_Nexus_10_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_XL_API_30" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -20,6 +25,19 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\USER\AndroidStudioProjects\STUST\STUST_Application.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
+  </component>
   <component name="ProjectId" id="1q4K867Rdp5duZV9LktK4oIQzNd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,11 +45,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_XL_API_30" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-21T13:31:05.639Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-03-27T11:56:52.510Z" />
+    <property name="ExportApk.ApkPath" value="C:\Users\USER\AndroidStudioProjects\STUST\app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/STUST_Application.jks" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
   </component>
@@ -113,9 +136,107 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="639" y="181" key="#app/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616333327395" />
-    <state x="614" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1616333419045">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1616842865549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616333419045" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616842865549" />
+    <state x="739" y="275" key="FileChooserDialogImpl" timestamp="1616846585054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846585054" />
+    <state width="930" height="279" key="GridCell.Tab.0.bottom" timestamp="1616846934643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="930" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846934643" />
+    <state width="930" height="279" key="GridCell.Tab.0.center" timestamp="1616846934643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="930" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846934643" />
+    <state width="930" height="279" key="GridCell.Tab.0.left" timestamp="1616846934643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="930" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846934643" />
+    <state width="930" height="279" key="GridCell.Tab.0.right" timestamp="1616846934643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="930" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846934643" />
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1616846021269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846021269" />
+    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1616846021268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846021268" />
+    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1616846021268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846021268" />
+    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1616846021269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616846021269" />
+    <state width="960" height="520" key="XDebugger.FullValuePopup" timestamp="1616845335389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="960" height="520" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616845335389" />
+    <state x="614" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1616576468055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1616576468055" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/Data/CrawlerData/PersonalData/UserInfo.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Thread/Refresh/RefreshThread.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Thread/Refresh/RefreshThread.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Thread/Refresh/RefreshThread.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Crawler/Outline/Flip/FlipUserInfoCrawler.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Crawler/Outline/Flip/FlipUserInfoCrawler.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Crawler/Outline/Flip/FlipUserInfoCrawler.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/WebCrawler/Crawler/Outline/Flip/FlipUserInfoCrawler.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="UserLoginInfo.getUser().getUsername()" language="JAVA" />
+        <watch expression="UserLoginInfo.getUser().getUsername(" language="JAVA" />
+        <watch expression="document.select(&quot;div.field-value&quot;)" language="JAVA" />
+        <watch expression="document.select(&quot;div.field-value&quot;).get(0).childNodes().size()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -54,6 +54,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/background_xml_news_item"
+        android:textColor="@color/colorGray3"
         android:text="查無公告"
         android:textSize="17sp"
         android:gravity="center"
