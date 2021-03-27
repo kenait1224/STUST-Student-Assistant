@@ -4,7 +4,7 @@
 請使用校內共通帳戶進行登入。
 ![STUST-Student-Assistant](sampledata/STUST-Student-Assistant.png)
 ## 版本資訊
-當前版本：v1.0.2
+當前版本：v1.0.3
 
 版本變更紀錄： [VESIONLOG.md](VERSIONLOG.md)
 ## 功能介紹
